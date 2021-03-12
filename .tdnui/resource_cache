@@ -1,0 +1,10 @@
+{
+  "datapack/pack.mcmeta": -609537569,
+  "datapack/data/global/advancements/root.json": 717491058,
+  "datapack/data/smoochypit/functions/foodinfos/food.tdn": 1444222598,
+  "datapack/data/smoochypit/predicates/foodinfos/hold_food.json": -63909746,
+  "datapack/data/global/advancements/smoochypit.json": -480751951,
+  "datapack/data/smoochypit/functions/foodinfos/tickplayer.tdn": 1664374714,
+  "datapack/data/smoochypit/advancements/iteminfos/globalfoodinfos.json": 1417038937,
+  "datapack/data/smoochypit/functions/foodinfos/config.tdn": -1316366339
+}

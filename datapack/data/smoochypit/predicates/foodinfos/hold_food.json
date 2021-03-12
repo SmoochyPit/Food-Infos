@@ -1,0 +1,29 @@
+{
+    "condition":"alternative",
+    "terms":[
+        
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+                "equipment":{
+                    "mainhand":{
+                        "tag":"smoochypit:foodinfos/food/items"
+                    }
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+                "equipment":{
+                    "offhand":{
+                        "tag":"smoochypit:foodinfos/food/items"
+                    }
+                }
+            }
+        }
+
+    ]
+}

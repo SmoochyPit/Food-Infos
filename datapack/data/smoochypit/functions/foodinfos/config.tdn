@@ -1,0 +1,215 @@
+@ on compile
+
+global final var food_config = {
+    
+    food_items: [
+        
+        {
+            id: item<minecraft:apple>,
+            hunger: 4,
+            saturation: 2.4
+        },
+        {
+            id: item<minecraft:baked_potato>,
+            hunger: 5,
+            saturation: 6
+        },
+        {
+            id: item<minecraft:beetroot>,
+            hunger: 1,
+            saturation: 1.2
+        },
+        {
+            id: item<minecraft:beetroot_soup>,
+            hunger: 6,
+            saturation: 7.2
+        },
+        {
+            id: item<minecraft:bread>,
+            hunger: 5,
+            saturation: 6
+        },
+        {
+            id: item<minecraft:cake>,
+            hunger: 14,
+            saturation: 2.8
+        },
+        {
+            id: item<minecraft:carrot>,
+            hunger: 3,
+            saturation: 3.6
+        },
+        {
+            id: item<minecraft:chorus_fruit>,
+            hunger: 4,
+            saturation: 2.4
+        },
+        {
+            id: item<minecraft:cooked_chicken>,
+            hunger: 6,
+            saturation: 7.2
+        },
+        {
+            id: item<minecraft:cooked_cod>,
+            hunger: 5,
+            saturation: 6
+        },
+        {
+            id: item<minecraft:cooked_mutton>,
+            hunger: 6,
+            saturation: 9.6
+        },
+        {
+            id: item<minecraft:cooked_porkchop>,
+            hunger: 8,
+            saturation: 12.8
+        },
+        {
+            id: item<minecraft:cooked_rabbit>,
+            hunger: 5,
+            saturation: 6
+        },
+        {
+            id: item<minecraft:cooked_salmon>,
+            hunger: 6,
+            saturation: 9.6
+        },
+        {
+            id: item<minecraft:cookie>,
+            hunger: 2,
+            saturation: 0.4
+        },
+        {
+            id: item<minecraft:dried_kelp>,
+            hunger: 1,
+            saturation: 0.6
+        },
+        {
+            id: item<minecraft:enchanted_golden_apple>,
+            hunger: 4,
+            saturation: 9.6
+        },
+        {
+            id: item<minecraft:golden_apple>,
+            hunger: 4,
+            saturation: 9.6
+        },
+        {
+            id: item<minecraft:golden_carrot>,
+            hunger: 6,
+            saturation: 14.4
+        },
+        {
+            id: item<minecraft:honey_bottle>,
+            hunger: 6,
+            saturation: 1.2
+        },
+        {
+            id: item<minecraft:melon_slice>,
+            hunger: 2,
+            saturation: 1.2
+        },
+        {
+            id: item<minecraft:mushroom_stew>,
+            hunger: 6,
+            saturation: 7.2
+        },
+        {
+            id: item<minecraft:poisonous_potato>,
+            hunger: 2,
+            saturation: 1.2
+        },
+        {
+            id: item<minecraft:potato>,
+            hunger: 1,
+            saturation: 0.6
+        },
+        {
+            id: item<minecraft:pufferfish>,
+            hunger: 1,
+            saturation: 0.2
+        },
+        {
+            id: item<minecraft:pumpkin_pie>,
+            hunger: 8,
+            saturation: 4.8
+        },
+        {
+            id: item<minecraft:rabbit_stew>,
+            hunger: 10,
+            saturation: 12
+        },
+        {
+            id: item<minecraft:beef>,
+            hunger: 3,
+            saturation: 1.8
+        },
+        {
+            id: item<minecraft:chicken>,
+            hunger: 2,
+            saturation: 1.2
+        },
+        {
+            id: item<minecraft:cod>,
+            hunger: 2,
+            saturation: 0.4
+        },
+        {
+            id: item<minecraft:mutton>,
+            hunger: 2,
+            saturation: 1.2
+        },
+        {
+            id: item<minecraft:porkchop>,
+            hunger: 3,
+            saturation: 1.8
+        },
+        {
+            id: item<minecraft:rabbit>,
+            hunger: 3,
+            saturation: 1.8
+        },
+        {
+            id: item<minecraft:salmon>,
+            hunger: 2,
+            saturation: 0.4
+        },
+        {
+            id: item<minecraft:rotten_flesh>,
+            hunger: 4,
+            saturation: 0.8
+        },
+        {
+            id: item<minecraft:spider_eye>,
+            hunger: 2,
+            saturation: 3.2
+        },
+        {
+            id: item<minecraft:cooked_beef>,
+            hunger: 8,
+            saturation: 12.8
+        },
+        {
+            id: item<minecraft:suspicious_stew>,
+            hunger: 6,
+            saturation: 7.2
+        },
+        {
+            id: item<minecraft:sweet_berries>,
+            hunger: 2,
+            saturation: 0.4
+        },
+        {
+            id: item<minecraft:tropical_fish>,
+            hunger: 1,
+            saturation: 0.2
+        }
+        
+    ]
+    
+}
+
+#log info "Selected items:"
+#for (entry in food_config) {
+#    log info entry.key + ": " + entry.value
+#}

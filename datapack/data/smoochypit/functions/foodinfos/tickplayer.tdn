@@ -1,0 +1,27 @@
+@ tag tick
+@ require smoochypit:foodinfos/food
+
+define objective fi.sneak minecraft.custom:minecraft.sneak_time
+set @a->fi.sneak += 0
+
+as @a[predicate=smoochypit:foodinfos/hold_food,tag=!global.ignore.gui,tag=!ii.displaying_actionbar] function {
+            
+    tag @s remove ii.has_displayed_item
+    
+    if entity @s[
+        scores={
+                fi.sneak=0
+        }
+    ]
+    function smoochypit:foodinfos/food/display_hunger_points
+        
+    if entity @s[
+        scores={
+            fi.sneak=1
+        }
+    ] 
+    function smoochypit:foodinfos/food/display_hunger_details
+    
+}
+
+set @a->fi.sneak = 0

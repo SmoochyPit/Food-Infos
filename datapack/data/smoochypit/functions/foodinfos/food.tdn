@@ -1,0 +1,98 @@
+@ on compile
+
+define function display_hunger_points {
+
+    var food_ids : list = []
+
+    for (edible in food_config.food_items) {
+    
+        var func_dir = (resource) ("/" +((string) edible.id).substring(10).toLowerCase())
+    
+        eval food_ids.add((resource) (string) edible.id)
+    
+        if entity @s[nbt={
+                SelectedItem:{
+                    id:${(string) edible.id}
+                }
+            }
+        ]
+        function $func_dir {
+            
+            var hunger_disp = ""
+            for (var i=2;i<=edible.hunger;i+=2) {
+                
+                eval hunger_disp += "■"
+                
+            }
+            if (edible.hunger % 2 == 1) {
+                
+                eval hunger_disp += "□"
+                
+            }
+            
+            title @s actionbar {
+                "text":"Hunger: ",
+                "color":"white",
+                "extra":[
+                    {
+                        "text":$hunger_disp
+                    }
+                ]
+            }
+        
+        }
+        
+        if entity @s[nbt={
+                Inventory:[
+                    {
+                        id:${(string) edible.id},
+                        Slot:-106b
+                    }
+                ]
+            }
+        ]
+        function $func_dir
+        
+    }
+    eval Tags.createTag(
+        "item",
+        resource</../items>,
+        food_ids
+    )
+}
+
+define function display_hunger_details {
+    
+    for (edible in food_config.food_items) {
+    
+        var func_dir = (resource) ("/" +((string) edible.id).substring(10).toLowerCase())
+    
+        if entity @s[nbt={
+                SelectedItem:{
+                    id:${(string) edible.id}
+                }
+            }
+        ]
+        function $func_dir {
+            
+            title @s actionbar {
+                "text":"Hunger: ",
+                "color":"white",
+                "extra":[
+                    {
+                        "text":${(string) edible.hunger}
+                    },
+                    {
+                        "text":", Saturation: "
+                    },
+                    {
+                        "text":${(string) edible.saturation}
+                    }
+                ]
+            }
+        
+        }
+    
+    }
+    
+}
