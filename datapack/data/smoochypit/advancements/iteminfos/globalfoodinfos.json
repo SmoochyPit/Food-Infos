@@ -3,7 +3,7 @@
         "title": "Food Infos",
         "description": "Nutrition Facts for Minecraft. v0.1",
         "icon": {
-            "item": "minecraft:cooked_beef"
+            "item": "minecraft:cookie"
         },
         "announce_to_chat": false,
         "show_toast": false
