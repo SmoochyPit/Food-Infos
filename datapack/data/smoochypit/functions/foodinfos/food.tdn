@@ -4,7 +4,7 @@ define function display_hunger_points {
 
     var food_ids : list = []
 
-    for (edible in food_config.food_items) {
+    for (edible in info_config.food_items) {
     
         var func_dir = (resource) ("/" +((string) edible.id).substring(10).toLowerCase())
     
@@ -21,21 +21,22 @@ define function display_hunger_points {
             var hunger_disp = ""
             for (var i=2;i<=edible.hunger;i+=2) {
                 
-                eval hunger_disp += "■"
+                eval hunger_disp += info_config.hunger_symbols.full
                 
             }
             if (edible.hunger % 2 == 1) {
                 
-                eval hunger_disp += "□"
+                eval hunger_disp += info_config.hunger_symbols.half
                 
             }
             
             title @s actionbar {
-                "text":"Hunger: ",
-                "color":"white",
+                "text":${info_config.prefixes.hunger},
+                "color":${info_config.colors.text},
                 "extra":[
                     {
-                        "text":$hunger_disp
+                        "text":$hunger_disp,
+                        "color":${info_config.colors.symbols}
                     }
                 ]
             }
@@ -63,7 +64,7 @@ define function display_hunger_points {
 
 define function display_hunger_details {
     
-    for (edible in food_config.food_items) {
+    for (edible in info_config.food_items) {
     
         var func_dir = (resource) ("/" +((string) edible.id).substring(10).toLowerCase())
     
@@ -76,17 +77,23 @@ define function display_hunger_details {
         function $func_dir {
             
             title @s actionbar {
-                "text":"Hunger: ",
-                "color":"white",
+                "text":${info_config.prefixes.hunger},
+                "color":${info_config.colors.text},
                 "extra":[
                     {
-                        "text":${(string) edible.hunger}
+                        "text":${(string) edible.hunger},
+                        "color":${info_config.colors.numbers}
                     },
                     {
-                        "text":", Saturation: "
+                        "text":" "
                     },
                     {
-                        "text":${(string) edible.saturation}
+                        "text":${info_config.prefixes.saturation},
+                        "color":${info_config.colors.text}
+                    },
+                    {
+                        "text":${(string) edible.saturation},
+                        "color":${info_config.colors.numbers}
                     }
                 ]
             }
