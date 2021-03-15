@@ -6,6 +6,7 @@
   "datapack/pack.png": -837570832,
   "datapack/data/global/advancements/smoochypit.json": -480751951,
   "datapack/data/smoochypit/functions/foodinfos/tickplayer.tdn": 1664374714,
+  "datapack/data/smoochypit/functions/foodinfos/uninstall.mcfunction": 1833639358,
   "datapack/data/smoochypit/advancements/iteminfos/globalfoodinfos.json": 1604124317,
   "datapack/data/smoochypit/functions/foodinfos/config.tdn": 340978534
 }
