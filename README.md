@@ -2,6 +2,9 @@
 
 Food Infos is a data pack for Minecraft: Java Edition which displays information about the food item currently being held. It is designed to work alongside [Item Infos](https://github.com/SmoochyPit/Item-Infos) or as a standalone data pack.
 
+![Certified Compatibility + Stamp of Quality](https://i.imgur.com/ltLPoQp.png)
+([Datapack Conventions?](https://mc-datapacks.github.io/en/))
+
 ## About 
 
 ### Features
