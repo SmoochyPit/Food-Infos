@@ -2,7 +2,7 @@
   "input-resources": "(automatically selected by Trident-UI)",
   "output": {
     "directories": {
-      "data-pack": "C:\\Users\\smooc\\AppData\\Roaming\\.minecraft\\saves\\CleanSlate\\datapacks\\foodinfos.zip",
+      "data-pack": "C:\\Users\\smooc\\Trident\\workspace\\foodinfos\\out\\foodinfos.zip",
       "resource-pack": "C:\\Users\\smooc\\Trident\\workspace\\foodinfos\\out\\foodinfos-resources.zip"
     },
     "clean-directories": {

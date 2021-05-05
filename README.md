@@ -2,6 +2,9 @@
 
 Food Infos is a data pack for Minecraft: Java Edition which displays information about the food item currently being held. It is designed to work alongside [Item Infos](https://github.com/SmoochyPit/Item-Infos) or as a standalone data pack.
 
+![Certified Compatibility + Stamp of Quality](https://i.imgur.com/ltLPoQp.png)
+([Datapack Conventions?](https://mc-datapacks.github.io/en/))
+
 ## About 
 
 ### Features
@@ -64,7 +67,7 @@ Supports Minecraft: Java Edition 1.16-1.16.5. I plan to maintain this data pack 
 
 ### Uninstalling
 
-There is currently no way of cleanly uninstalling this data pack. Removing it will leave behind objectives. I plan to add an uninstallation function very soon.
+To uninstall, run `/function smoochypit:foodinfos/uninstall`. This will remove all objectives created by the data pack.
 
 ### Configuration
 
