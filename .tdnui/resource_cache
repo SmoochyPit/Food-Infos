@@ -1,11 +1,12 @@
 {
-  "datapack/pack.mcmeta": -609537569,
+  "datapack/pack.mcmeta": 1888478368,
   "datapack/data/global/advancements/root.json": 717491058,
   "datapack/data/smoochypit/functions/foodinfos/food.tdn": 419428633,
   "datapack/data/smoochypit/predicates/foodinfos/hold_food.json": -63909746,
   "datapack/pack.png": -837570832,
   "datapack/data/global/advancements/smoochypit.json": -480751951,
   "datapack/data/smoochypit/functions/foodinfos/tickplayer.tdn": 1664374714,
-  "datapack/data/smoochypit/advancements/iteminfos/globalfoodinfos.json": 1604124317,
+  "datapack/data/smoochypit/functions/foodinfos/uninstall.mcfunction": 1833639358,
+  "datapack/data/smoochypit/advancements/iteminfos/globalfoodinfos.json": -1146817827,
   "datapack/data/smoochypit/functions/foodinfos/config.tdn": 340978534
 }
