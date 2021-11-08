@@ -8,7 +8,7 @@
             "predicate":{
                 "equipment":{
                     "mainhand":{
-                        "tag":"smoochypit:foodinfos/food/items"
+                        "tag":"foodinfos:food/items"
                     }
                 }
             }
@@ -19,7 +19,7 @@
             "predicate":{
                 "equipment":{
                     "offhand":{
-                        "tag":"smoochypit:foodinfos/food/items"
+                        "tag":"foodinfos:food/items"
                     }
                 }
             }
