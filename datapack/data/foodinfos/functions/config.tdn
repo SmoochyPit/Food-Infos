@@ -110,6 +110,11 @@ global final var info_config = {
             saturation: 9.6
         },
         {
+            id: item<minecraft:glow_berries>,
+            hunger: 2,
+            saturation: 0.4
+        },
+        {
             id: item<minecraft:golden_carrot>,
             hunger: 6,
             saturation: 14.4
